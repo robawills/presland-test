@@ -1,3 +1,4 @@
+dateModified: 1552427998
 email:
   fromEmail: robawills@me.com
   fromName: Preslandtest
@@ -5,6 +6,27 @@ email:
 fieldGroups:
   ab3b24fa-4d81-4fa0-9890-91bb09c9c7b8:
     name: Common
+plugins:
+  sprout-forms:
+    enabled: true
+    settings:
+      captchaSettings:
+        sproutforms-duplicatecaptcha:
+          enabled: 1
+        sproutforms-honeypotcaptcha:
+          enabled: 1
+          honeypotFieldName: beesknees
+          honeypotScreenReaderMessage: 'Leave this field blank'
+        sproutforms-javascriptcaptcha:
+          enabled: 1
+      enableEditFormEntryViaFrontEnd: 0
+      enablePayloadForwarding: 0
+      enablePerFormTemplateFolderOverride: 0
+      enableSaveData: 1
+      enableSaveDataPerFormBasis: 0
+      pluginNameOverride: ''
+      saveDataByDefault: 1
+      templateFolderOverride: sproutforms-accessibletemplates
 siteGroups:
   1a294362-d993-4caf-9b5c-c35e8f16424b:
     name: Preslandtest
