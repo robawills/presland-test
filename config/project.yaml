@@ -1,0 +1,32 @@
+email:
+  fromEmail: robawills@me.com
+  fromName: Preslandtest
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  ab3b24fa-4d81-4fa0-9890-91bb09c9c7b8:
+    name: Common
+siteGroups:
+  1a294362-d993-4caf-9b5c-c35e8f16424b:
+    name: Preslandtest
+sites:
+  b4948f33-f703-4281-b7a3-865047ceba0d:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-GB
+    name: Preslandtest
+    primary: true
+    siteGroup: 1a294362-d993-4caf-9b5c-c35e8f16424b
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: Preslandtest
+  schemaVersion: 3.1.25
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
