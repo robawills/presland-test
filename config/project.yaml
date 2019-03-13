@@ -1,12 +1,728 @@
-dateModified: 1552427998
+dateModified: 1552504841
 email:
   fromEmail: robawills@me.com
   fromName: Preslandtest
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  5ddbb644-c0ba-4ee9-8916-3fa81089c674:
+    name: About
   ab3b24fa-4d81-4fa0-9890-91bb09c9c7b8:
     name: Common
+  bb084a2c-3720-4871-975b-e494d6c5662b:
+    name: Rates
+  c31030dc-d9e0-4e41-bc05-da0100400796:
+    name: Contact
+  cf62772c-7aa9-4d10-a160-c4b0409a00d0:
+    name: Home
+  d80b5a63-a471-4743-ac55-b3d0f004afeb:
+    name: Services
+  e028053d-1703-480e-ab68-ce1c90215b25:
+    name: Reviews
+  f827cd92-7a89-4ccd-b86c-ba9fcd43adde:
+    name: 'Single header'
+fields:
+  1206d340-8bff-4ba5-9eaf-5ff0149c45cd:
+    contentColumnType: text
+    fieldGroup: bb084a2c-3720-4871-975b-e494d6c5662b
+    handle: systemPowerflushing
+    instructions: ''
+    name: 'System Powerflushing'
+    searchable: true
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        col1:
+          handle: numberOfRadiators
+          heading: 'Number of radiators'
+          type: singleline
+          width: ''
+        col2:
+          handle: price
+          heading: Price
+          type: singleline
+          width: ''
+      defaults:
+        -
+          col1: ''
+          col2: ''
+      maxRows: ''
+      minRows: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  1aaf0623-3991-478e-8d66-df32b14c67c0:
+    contentColumnType: string
+    fieldGroup: cf62772c-7aa9-4d10-a160-c4b0409a00d0
+    handle: homeBackgroundImage
+    instructions: ''
+    name: 'Background image'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:97e1fbbe-971c-447a-8559-d0683bc2c9da'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:97e1fbbe-971c-447a-8559-d0683bc2c9da'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  1d4435c1-e49f-4719-90ec-40377ecfd886:
+    contentColumnType: integer(10)
+    fieldGroup: e028053d-1703-480e-ab68-ce1c90215b25
+    handle: reviewCount
+    instructions: ''
+    name: 'Review count'
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: null
+      min: null
+      size: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  1fa3da6d-dd9c-46d1-ba81-839fcc1d67f4:
+    contentColumnType: text
+    fieldGroup: bb084a2c-3720-4871-975b-e494d6c5662b
+    handle: generalRates
+    instructions: ''
+    name: 'General rates'
+    searchable: true
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        col1:
+          handle: serviceRate
+          heading: Service
+          type: singleline
+          width: ''
+        col2:
+          handle: normalHoursRate
+          heading: 'Normal hours'
+          type: singleline
+          width: ''
+        col3:
+          handle: outOfHoursRate
+          heading: 'Out of hours'
+          type: singleline
+          width: ''
+      defaults:
+        -
+          col1: ''
+          col2: ''
+          col3: ''
+      maxRows: ''
+      minRows: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  21a54c11-7c42-40ed-9eba-0fd766c42bbd:
+    contentColumnType: string
+    fieldGroup: ab3b24fa-4d81-4fa0-9890-91bb09c9c7b8
+    handle: contactMap
+    instructions: ''
+    name: Map
+    searchable: true
+    settings:
+      boundary: '""'
+      boundaryRestrictionNELat: ''
+      boundaryRestrictionNELng: ''
+      boundaryRestrictionSWLat: ''
+      boundaryRestrictionSWLng: ''
+      countryRestriction: ''
+      height: '400'
+      hideLatLng: '1'
+      hideMap: ''
+      lat: '51.272154'
+      lng: '0.514951'
+      typeRestriction: ''
+      zoom: '15'
+    translationKeyFormat: null
+    translationMethod: none
+    type: ether\simplemap\fields\MapField
+  267ff9fe-735b-49c7-932b-2207f2f25aaf:
+    contentColumnType: string
+    fieldGroup: e028053d-1703-480e-ab68-ce1c90215b25
+    handle: reviews
+    instructions: ''
+    name: Reviews
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_reviews}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  352d1b72-337d-4404-8724-d4af9f490c96:
+    contentColumnType: string
+    fieldGroup: d80b5a63-a471-4743-ac55-b3d0f004afeb
+    handle: services
+    instructions: ''
+    name: Services
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_services}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  45c4fd9b-2363-401d-b71f-8ce9d0f1f597:
+    contentColumnType: text
+    fieldGroup: c31030dc-d9e0-4e41-bc05-da0100400796
+    handle: contactText
+    instructions: ''
+    name: 'Contact text'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  7821d0f1-7792-40f3-a93e-e25263db75ec:
+    contentColumnType: text
+    fieldGroup: f827cd92-7a89-4ccd-b86c-ba9fcd43adde
+    handle: intro
+    instructions: ''
+    name: Intro
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  98b9cedc-ba2d-417e-a3c8-e0ea676b3189:
+    contentColumnType: text
+    fieldGroup: f827cd92-7a89-4ccd-b86c-ba9fcd43adde
+    handle: pageTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a906780d-f4a3-476e-9c9b-9532cfebb69e:
+    contentColumnType: text
+    fieldGroup: c31030dc-d9e0-4e41-bc05-da0100400796
+    handle: emailAddress
+    instructions: ''
+    name: 'Email address'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ae259eee-9e8a-4d73-900e-cde371490a3c:
+    contentColumnType: text
+    fieldGroup: cf62772c-7aa9-4d10-a160-c4b0409a00d0
+    handle: homeHeadline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Committed to providing the highest quality of plumbing, gas & drainage services to all our clients.'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d36123d9-f655-4f2e-9706-52cd85eae4c6:
+    contentColumnType: string
+    fieldGroup: cf62772c-7aa9-4d10-a160-c4b0409a00d0
+    handle: homeServices
+    instructions: ''
+    name: Services
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_homeservices}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  e1930f75-8bbe-4cdd-ae20-ad2e28996875:
+    contentColumnType: text
+    fieldGroup: e028053d-1703-480e-ab68-ce1c90215b25
+    handle: rating
+    instructions: ''
+    name: Rating
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ea0b58c6-802b-4b27-8430-55a6732103ba:
+    contentColumnType: text
+    fieldGroup: e028053d-1703-480e-ab68-ce1c90215b25
+    handle: reviewCopy
+    instructions: ''
+    name: 'Review copy'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fcd02379-563a-4732-828b-24df572581a5:
+    contentColumnType: string
+    fieldGroup: 5ddbb644-c0ba-4ee9-8916-3fa81089c674
+    handle: gallery
+    instructions: ''
+    name: Gallery
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:97e1fbbe-971c-447a-8559-d0683bc2c9da'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:97e1fbbe-971c-447a-8559-d0683bc2c9da'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  ff3b4b9c-4dfe-4d59-a2ac-e3641f42a482:
+    contentColumnType: text
+    fieldGroup: c31030dc-d9e0-4e41-bc05-da0100400796
+    handle: phoneNumber
+    instructions: ''
+    name: 'Phone number'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+globalSets:
+  d2b3f1fc-7576-40d6-88fc-30a408808455:
+    fieldLayouts:
+      9c2e827d-1241-4d86-8a71-5e1c4a228485:
+        tabs:
+          -
+            fields:
+              a906780d-f4a3-476e-9c9b-9532cfebb69e:
+                required: false
+                sortOrder: 1
+              ff3b4b9c-4dfe-4d59-a2ac-e3641f42a482:
+                required: false
+                sortOrder: 2
+            name: 'Tab 1'
+            sortOrder: 1
+    handle: contactDetails
+    name: 'Contact details'
+matrixBlockTypes:
+  2f03e3ad-1463-44d4-84eb-e5e00b2fb338:
+    field: 352d1b72-337d-4404-8724-d4af9f490c96
+    fieldLayouts:
+      08649e38-ae40-4a63-b73b-a2f1ce03ecfe:
+        tabs:
+          -
+            fields:
+              16d75c1f-4399-4970-adff-7abaf4cc4660:
+                required: false
+                sortOrder: 3
+              1d75ac98-3b58-47f5-8f2a-b3a56a55020d:
+                required: false
+                sortOrder: 2
+              48f351f1-8fe9-4b8a-93ab-f388c80f430e:
+                required: false
+                sortOrder: 4
+              6fb08c41-c8fa-4a2f-a50e-7f6ea73696c3:
+                required: false
+                sortOrder: 6
+              7c3ceeba-9c8a-426e-b164-2c434b7ed9ac:
+                required: false
+                sortOrder: 5
+              8660b84f-a091-4cc9-b5a9-052d9c56dc25:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      16d75c1f-4399-4970-adff-7abaf4cc4660:
+        contentColumnType: text
+        fieldGroup: null
+        handle: serviceDescription
+        instructions: ''
+        name: Description
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '3'
+          multiline: '1'
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      1d75ac98-3b58-47f5-8f2a-b3a56a55020d:
+        contentColumnType: text
+        fieldGroup: null
+        handle: serviceTitle
+        instructions: ''
+        name: Title
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      48f351f1-8fe9-4b8a-93ab-f388c80f430e:
+        contentColumnType: text
+        fieldGroup: null
+        handle: serviceList
+        instructions: ''
+        name: 'Service List'
+        searchable: true
+        settings:
+          addRowLabel: 'Add a row'
+          columnType: text
+          columns:
+            col1:
+              handle: serviceListItem
+              heading: Service
+              type: singleline
+              width: ''
+          defaults:
+            -
+              col1: ''
+          maxRows: ''
+          minRows: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Table
+      6fb08c41-c8fa-4a2f-a50e-7f6ea73696c3:
+        contentColumnType: text
+        fieldGroup: null
+        handle: serviceRates
+        instructions: ''
+        name: Rates
+        searchable: true
+        settings:
+          addRowLabel: 'Add a row'
+          columnType: text
+          columns:
+            col1:
+              handle: hours
+              heading: Hours
+              type: singleline
+              width: ''
+            col2:
+              handle: normalHours
+              heading: 'Normal hours'
+              type: singleline
+              width: ''
+            col3:
+              handle: outIfHours
+              heading: 'Out if hours'
+              type: singleline
+              width: ''
+          defaults:
+            -
+              col1: ''
+              col2: ''
+              col3: ''
+          maxRows: ''
+          minRows: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Table
+      7c3ceeba-9c8a-426e-b164-2c434b7ed9ac:
+        contentColumnType: string
+        fieldGroup: null
+        handle: serviceBgImg
+        instructions: ''
+        name: 'Background image'
+        searchable: true
+        settings:
+          allowedKinds:
+            - image
+          defaultUploadLocationSource: 'volume:97e1fbbe-971c-447a-8559-d0683bc2c9da'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: '1'
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:97e1fbbe-971c-447a-8559-d0683bc2c9da'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: '1'
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      8660b84f-a091-4cc9-b5a9-052d9c56dc25:
+        contentColumnType: string
+        fieldGroup: null
+        handle: serviceIcon
+        instructions: ''
+        name: Icon
+        searchable: true
+        settings:
+          allowedKinds:
+            - image
+          defaultUploadLocationSource: 'volume:97e1fbbe-971c-447a-8559-d0683bc2c9da'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: '1'
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:97e1fbbe-971c-447a-8559-d0683bc2c9da'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: '1'
+          viewMode: large
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+    handle: service
+    name: Service
+    sortOrder: 1
+  bb46a570-f604-4e9b-9371-f24a994b1ec2:
+    field: d36123d9-f655-4f2e-9706-52cd85eae4c6
+    fieldLayouts:
+      412f1f04-6d14-4db5-b23b-342af55e273b:
+        tabs:
+          -
+            fields:
+              09809fc4-89bb-4a5e-8130-41e8915604c7:
+                required: false
+                sortOrder: 1
+              50e869dc-4c87-46b4-9b96-cb6c6d796a89:
+                required: false
+                sortOrder: 2
+              98c83f9c-2ebb-4050-8a90-1d5db17de821:
+                required: false
+                sortOrder: 3
+            name: Content
+            sortOrder: 1
+    fields:
+      09809fc4-89bb-4a5e-8130-41e8915604c7:
+        contentColumnType: text
+        fieldGroup: null
+        handle: serviceTitle
+        instructions: ''
+        name: Title
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      50e869dc-4c87-46b4-9b96-cb6c6d796a89:
+        contentColumnType: string
+        fieldGroup: null
+        handle: serviceIcon
+        instructions: ''
+        name: Icon
+        searchable: true
+        settings:
+          allowedKinds:
+            - image
+          defaultUploadLocationSource: 'volume:97e1fbbe-971c-447a-8559-d0683bc2c9da'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: '1'
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:97e1fbbe-971c-447a-8559-d0683bc2c9da'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      98c83f9c-2ebb-4050-8a90-1d5db17de821:
+        contentColumnType: text
+        fieldGroup: null
+        handle: serviceDis
+        instructions: ''
+        name: Description
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '2'
+          multiline: '1'
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: homeService
+    name: Service
+    sortOrder: 1
+  c973c3e5-db60-48d4-8fd2-0ad1f587a0bb:
+    field: 267ff9fe-735b-49c7-932b-2207f2f25aaf
+    fieldLayouts:
+      e1831f56-853f-4e9e-a2a5-f615c0f66eb2:
+        tabs:
+          -
+            fields:
+              04d87cca-35dd-442d-9ae4-b83419045145:
+                required: false
+                sortOrder: 3
+              aa744a0f-4fa0-4527-b005-7618dae77906:
+                required: false
+                sortOrder: 1
+              d338a255-1439-4c1d-a640-2c8ffe4422c1:
+                required: false
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      04d87cca-35dd-442d-9ae4-b83419045145:
+        contentColumnType: text
+        fieldGroup: null
+        handle: reviewScore
+        instructions: ''
+        name: 'Review score'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      aa744a0f-4fa0-4527-b005-7618dae77906:
+        contentColumnType: text
+        fieldGroup: null
+        handle: reviewTitle
+        instructions: ''
+        name: 'Review title'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      d338a255-1439-4c1d-a640-2c8ffe4422c1:
+        contentColumnType: text
+        fieldGroup: null
+        handle: reviewCopy
+        instructions: ''
+        name: 'Review copy'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: '1'
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: review
+    name: Review
+    sortOrder: 1
 plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.2
+  simplemap:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+    settings:
+      apiKey: AIzaSyBK0orfT648qphNGCdfK2QZ49vRsZr7QAI
+      unrestrictedApiKey: ''
   sprout-forms:
     enabled: true
     settings:
@@ -27,6 +743,37 @@ plugins:
       pluginNameOverride: ''
       saveDataByDefault: 1
       templateFolderOverride: sproutforms-accessibletemplates
+sections:
+  b47f1563-006b-496f-b86c-3c509ee88e31:
+    enableVersioning: true
+    entryTypes:
+      fa3dc05f-7473-4b21-b13a-b7f9f9dedddc:
+        fieldLayouts:
+          064aff32-7817-42fd-92b6-0d5dba2e0400:
+            tabs:
+              -
+                fields:
+                  29594e20-d56a-492f-8c6b-77bdd003aa92:
+                    required: false
+                    sortOrder: 1
+                name: Common
+                sortOrder: 1
+        handle: home
+        hasTitleField: true
+        name: Home
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: home
+    name: Home
+    propagateEntries: true
+    siteSettings:
+      b4948f33-f703-4281-b7a3-865047ceba0d:
+        enabledByDefault: true
+        hasUrls: false
+        template: null
+        uriFormat: null
+    type: channel
 siteGroups:
   1a294362-d993-4caf-9b5c-c35e8f16424b:
     name: Preslandtest
@@ -52,3 +799,13 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
+volumes:
+  97e1fbbe-971c-447a-8559-d0683bc2c9da:
+    handle: uploadsImages
+    hasUrls: true
+    name: 'Uploads images'
+    settings:
+      path: uploads/images/
+    sortOrder: 1
+    type: craft\volumes\Local
+    url: /uploads/images/

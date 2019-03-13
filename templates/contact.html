@@ -1,33 +1,54 @@
 {#
- # Homepage template
+ # Contact template
  # ---------------
  #
- # When this template gets loaded, it will be because someone has accessed
- # http://yoursite.com/ (without any URI). Craft checks to see if you have
- # a Single section set to be the Homepage (as you do, by default), and
- # loads the section’s Template (this file). A special ‘entry’ variable
- # will already be set for you, assigned to the Homepage entry.
- #
- # It's worth noting that even if you didn't have a Homepage Single section,
- # as long as this template remains at craft/templates/index.html, it
- # would still be the one to get loaded when accessing http://yoursite.com/,
- # albeit without an ‘entry’ variable already set for you.
- #
- # See this page for more details on how Craft routes requests:
- # http://craftcms.com/docs/routing
  #}
 
  {% extends "_layouts/base" %}
+
  {% block content %}
 
- {% include '_partials/_home/hero' %}
- {% include '_partials/_home/services' %}
- {% include '_partials/_home/contact' %}
- {% include '_partials/_home/about' %}
- {% include '_partials/_home/trust' %}
+
+<div class="bg-darkgray">
+
+    {% include '_partials/_shared/single-head' %}
+
+    <section class="contact">
+        <div class="grid-container  contact">
+            <div class="grid-x  grid-padding-x  bg-white  align-stretch  align-middle">
+
+                <div class="cell  medium-6  padding-wrap">
+                    <h5>
+                        To request a free quote please fill in the form or contact us on <a class="bold" href="tel:{{ contactDetails.phoneNumber }}">{{ contactDetails.phoneNumber }}</a> or email <a class="bold"  href="mailto:{{ contactDetails.emailAddress }}">{{ contactDetails.emailAddress }}</a>
+                    </h5>
+                    {{ entry.contactText }}
+                </div>
+                
+
+                <div class="cell  medium-6  bg-blue  padding-wrap">
+
+                    {{ craft.sproutForms.displayForm('homeForm') }}
+                    
+                </div>
+            
+            </div>
+        </div>
+    </section>
+ 
+</div>
 
 
- <script>
+<section class="grid-container  contact">
+    
+    <div class="grid-x  grid-padding-x">
+        <div id="map" class="cell  small-12  js-map  contact__map">
+           
+        </div>
+    </div>
+
+</section>
+
+<script>
     var map;
     function initMap() {
         // Display the map
@@ -64,8 +85,9 @@
             {"featureType": "water","elementType": "labels","stylers": [{"visibility": "off"}]}]
         });
         }
-    </script>
+</script>
+
+{% endblock %}
  
- {% endblock %}
  
  
