@@ -1,4 +1,4 @@
-dateModified: 1552504841
+dateModified: 1552570969
 email:
   fromEmail: robawills@me.com
   fromName: Preslandtest
@@ -744,6 +744,88 @@ plugins:
       saveDataByDefault: 1
       templateFolderOverride: sproutforms-accessibletemplates
 sections:
+  172fa5df-618f-4add-9b3e-a4970730afa6:
+    enableVersioning: true
+    entryTypes:
+      64ece824-b211-404e-9860-bf974eff0f20:
+        fieldLayouts:
+          fb20db74-f0d0-4d0c-ad5e-704d4b60a115:
+            tabs:
+              -
+                fields:
+                  7821d0f1-7792-40f3-a93e-e25263db75ec:
+                    required: false
+                    sortOrder: 2
+                  98b9cedc-ba2d-417e-a3c8-e0ea676b3189:
+                    required: false
+                    sortOrder: 1
+                name: Info
+                sortOrder: 1
+              -
+                fields:
+                  1206d340-8bff-4ba5-9eaf-5ff0149c45cd:
+                    required: false
+                    sortOrder: 2
+                  1fa3da6d-dd9c-46d1-ba81-839fcc1d67f4:
+                    required: false
+                    sortOrder: 1
+                name: Rates
+                sortOrder: 2
+        handle: rates
+        hasTitleField: false
+        name: Rates
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: rates
+    name: Rates
+    propagateEntries: true
+    siteSettings:
+      b4948f33-f703-4281-b7a3-865047ceba0d:
+        enabledByDefault: true
+        hasUrls: true
+        template: rates
+        uriFormat: rates
+    type: single
+  87a687c7-a0b7-49e6-9cff-14289d7599eb:
+    enableVersioning: true
+    entryTypes:
+      e99ab30a-dee9-4dc2-8b43-e4d2c5d82a62:
+        fieldLayouts:
+          2a720ad6-46cb-47c1-b755-df7c4aadc819:
+            tabs:
+              -
+                fields:
+                  21a54c11-7c42-40ed-9eba-0fd766c42bbd:
+                    required: false
+                    sortOrder: 4
+                  45c4fd9b-2363-401d-b71f-8ce9d0f1f597:
+                    required: false
+                    sortOrder: 3
+                  7821d0f1-7792-40f3-a93e-e25263db75ec:
+                    required: false
+                    sortOrder: 2
+                  98b9cedc-ba2d-417e-a3c8-e0ea676b3189:
+                    required: false
+                    sortOrder: 1
+                name: Info
+                sortOrder: 1
+        handle: contact
+        hasTitleField: false
+        name: Contact
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: contact
+    name: Contact
+    propagateEntries: true
+    siteSettings:
+      b4948f33-f703-4281-b7a3-865047ceba0d:
+        enabledByDefault: true
+        hasUrls: true
+        template: contact
+        uriFormat: contact
+    type: single
   b47f1563-006b-496f-b86c-3c509ee88e31:
     enableVersioning: true
     entryTypes:
@@ -753,11 +835,24 @@ sections:
             tabs:
               -
                 fields:
-                  29594e20-d56a-492f-8c6b-77bdd003aa92:
+                  1aaf0623-3991-478e-8d66-df32b14c67c0:
+                    required: false
+                    sortOrder: 2
+                  21a54c11-7c42-40ed-9eba-0fd766c42bbd:
+                    required: false
+                    sortOrder: 3
+                  ae259eee-9e8a-4d73-900e-cde371490a3c:
                     required: false
                     sortOrder: 1
-                name: Common
+                name: Home
                 sortOrder: 1
+              -
+                fields:
+                  d36123d9-f655-4f2e-9706-52cd85eae4c6:
+                    required: false
+                    sortOrder: 1
+                name: Services
+                sortOrder: 2
         handle: home
         hasTitleField: true
         name: Home
@@ -770,10 +865,106 @@ sections:
     siteSettings:
       b4948f33-f703-4281-b7a3-865047ceba0d:
         enabledByDefault: true
-        hasUrls: false
-        template: null
-        uriFormat: null
-    type: channel
+        hasUrls: true
+        template: ''
+        uriFormat: __home__
+    type: single
+  c325103b-6eb3-4571-82ff-3b11908d4cbe:
+    enableVersioning: true
+    entryTypes:
+      dd9b0ae3-9e1b-42b8-a5c3-a662ebff231e:
+        fieldLayouts:
+          fa2c576d-a48b-44f0-bd43-0c9b2936d4bd:
+            tabs:
+              -
+                fields:
+                  7821d0f1-7792-40f3-a93e-e25263db75ec:
+                    required: false
+                    sortOrder: 2
+                  98b9cedc-ba2d-417e-a3c8-e0ea676b3189:
+                    required: false
+                    sortOrder: 1
+                name: Info
+                sortOrder: 1
+              -
+                fields:
+                  fcd02379-563a-4732-828b-24df572581a5:
+                    required: false
+                    sortOrder: 1
+                name: Gallery
+                sortOrder: 2
+              -
+                fields:
+                  1d4435c1-e49f-4719-90ec-40377ecfd886:
+                    required: false
+                    sortOrder: 3
+                  267ff9fe-735b-49c7-932b-2207f2f25aaf:
+                    required: false
+                    sortOrder: 4
+                  e1930f75-8bbe-4cdd-ae20-ad2e28996875:
+                    required: false
+                    sortOrder: 1
+                  ea0b58c6-802b-4b27-8430-55a6732103ba:
+                    required: false
+                    sortOrder: 2
+                name: Reviews
+                sortOrder: 3
+        handle: about
+        hasTitleField: false
+        name: About
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: about
+    name: About
+    propagateEntries: true
+    siteSettings:
+      b4948f33-f703-4281-b7a3-865047ceba0d:
+        enabledByDefault: true
+        hasUrls: true
+        template: about
+        uriFormat: about
+    type: single
+  c54cf34e-35b6-433e-9725-881693a45cb1:
+    enableVersioning: true
+    entryTypes:
+      8864b904-526d-47a4-8721-166edc275de8:
+        fieldLayouts:
+          712221a7-e9dc-4671-86ac-ad60619e6631:
+            tabs:
+              -
+                fields:
+                  7821d0f1-7792-40f3-a93e-e25263db75ec:
+                    required: false
+                    sortOrder: 2
+                  98b9cedc-ba2d-417e-a3c8-e0ea676b3189:
+                    required: false
+                    sortOrder: 1
+                name: Info
+                sortOrder: 1
+              -
+                fields:
+                  352d1b72-337d-4404-8724-d4af9f490c96:
+                    required: false
+                    sortOrder: 1
+                name: Services
+                sortOrder: 2
+        handle: services
+        hasTitleField: false
+        name: Services
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: services
+    name: Services
+    propagateEntries: true
+    siteSettings:
+      b4948f33-f703-4281-b7a3-865047ceba0d:
+        enabledByDefault: true
+        hasUrls: true
+        template: services
+        uriFormat: services
+    type: single
 siteGroups:
   1a294362-d993-4caf-9b5c-c35e8f16424b:
     name: Preslandtest
