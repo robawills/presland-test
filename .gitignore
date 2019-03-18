@@ -1,5 +1,10 @@
 /.env
 /.idea
 /vendor
+/web/cpresources
+!/web/cpresources/.gitkeep
+/config/license.key
 .DS_Store
+node_modules
+
 /web/uploads
