@@ -6,8 +6,10 @@
 
     &__img {
         height: 18rem;
+        
         @include breakpoint(medium) {
             height: 30rem;
+            background-color: red;
         }
     }
 
