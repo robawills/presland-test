@@ -14,7 +14,7 @@
                     <ul class="orbit-container  slider__container"> 
                         {% for assets in entry.gallery %}    
                             {% if loop.first %}                             
-                            <li class="orbit-slide  is-active  slider__img"  style="background: url('{{ assets.url }}') fixed no-repeat center center; background-size: cover;">
+                            <li class="orbit-slide  is-active  slider__img"  style="background: url('{{ assets.url }}') no-repeat center center; background-size: cover;">
                             {% else %}
                             <li class="orbit-slide  slider__img"  style="background: url('{{ assets.url }}') no-repeat center center; background-size: cover;">
                             
